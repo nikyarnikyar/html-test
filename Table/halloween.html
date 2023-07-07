@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0" />
+	<style>
+	canvas {
+		border: 3px solid orange;
+		height: 600px;
+		width: 1000px;
+		margin-left: 10%;
+	}
+	</style>
+	<title>Halloween</title>
+</head>
+
+<body>
+	<canvas> </canvas>
+	<script>
+		const ctx =
+			document.querySelector("canvas").getContext("2d");
+		ctx.beginPath();
+		ctx.lineCap = "round";
+		ctx.lineJoin = "round";
+		ctx.moveTo(20, 65);
+		ctx.lineTo(220, 125);
+		for(let i = 227; i <= 269; i += 3) {
+			ctx.moveTo(220, 125);
+			ctx.lineTo(i, 140);
+		}
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.fillStyle = "black";
+		ctx.moveTo(60, 140);
+		ctx.lineTo(120, 79);
+		ctx.lineTo(135, 79);
+		ctx.lineTo(195, 140);
+		ctx.lineTo(60, 140);
+		ctx.fill();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.arc(127, -30, 80, Math.PI / 3.5, (Math.PI * 3) / 4.2);
+		ctx.fill();
+		ctx.moveTo(127, 5);
+		ctx.lineTo(105, 40);
+		ctx.lineTo(149, 40);
+		ctx.lineTo(127, 5);
+		ctx.fill();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.fillStyle = "orange";
+		ctx.arc(127, 43, 30, -Math.PI / 30, (-Math.PI * 35) / 36, false);
+		ctx.fill();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.lineCap = "round";
+		ctx.lineJoin = "round";
+		ctx.moveTo(127, 55);
+		ctx.lineJoin = "round";
+		ctx.lineCap = "round";
+		ctx.lineTo(112, 62);
+		ctx.lineTo(127, 58);
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.fillStyle = "black";
+		ctx.moveTo(122, 50);
+		ctx.lineTo(110, 46);
+		ctx.lineTo(106, 50);
+		ctx.lineTo(122, 50);
+		ctx.fill();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.fillStyle = "black";
+		ctx.moveTo(135, 50);
+		ctx.lineTo(147, 46);
+		ctx.lineTo(151, 50);
+		ctx.lineTo(135, 50);
+		ctx.fill();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.lineCap = "round";
+		ctx.lineJoin = "round";
+		ctx.moveTo(114, 65);
+		ctx.lineTo(118, 68);
+		ctx.lineTo(122, 65);
+		ctx.lineTo(126, 68);
+		ctx.lineTo(130, 65);
+		ctx.lineTo(134, 68);
+		ctx.lineTo(138, 65);
+		ctx.stroke();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.strokeStyle = "orange";
+		ctx.font = "20px Serif";
+		ctx.strokeText("Happy", 210, 20);
+		ctx.strokeStyle = "black";
+		ctx.strokeText("Halloween", 185, 40);
+	</script>
+</body>
+
+</html>

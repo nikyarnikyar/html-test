@@ -1,0 +1,42 @@
+<html>
+<head>
+   <link href="https://vjs.zencdn.net/7.19.2/video-js.css"rel="stylesheet" />
+</head>
+<body>
+   <video
+      id="my-video"
+      class="video-js vjs-default-skin"
+      controls
+      preload="auto"
+      width="560"
+      height="300"
+      data-setup='{}'
+   >
+      <source
+         src="https://www.tutorialspoint.com/videos/sample1080p.mp4"
+         type="video/mp4"
+         size="1080"
+      >
+      <track
+         kind="subtitles"
+         src="https://www.tutorialspoint.com/videos/captions.vtt"
+         srclang="en"
+         label="English"
+         default
+      >
+      <track
+         kind="subtitles"
+         src="https://www.tutorialspoint.com/videos/captionsSpa.vtt"
+         srclang="es"
+         label="Spanish"
+      >
+      <track
+         kind="subtitles"
+         src="https://www.tutorialspoint.com/videos/captionsFre.vtt"
+         srclang="fr"
+         label="French"
+      >
+   </video>
+   <script src="https://www.tutorialspoint.com/videos/video1.mp4"></script>
+</body>
+</html>

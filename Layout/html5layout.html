@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML Layout with CSS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: peachpuff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: burlywood;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: palegoldenrod;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: circle;
+  padding: 0;
+  word-spacing: 2px;
+  line-height: 30px;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+section::after {
+  content: "after";
+  display: block;
+  clear: both;
+  margin: 1rem;
+  color:aquamarine;
+  background-color: black;
+  }
+footer {
+  background-color:peachpuff;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<!-- <h2>CSS Layout Float</h2>
+<p>HTML layout refers to the way in which the content of a 
+  website is organized and structured. It makes the website easy to navigate.</p> -->
+
+<header>
+  <h2>Road Trip</h2>
+</header>
+
+<section>
+  <nav>
+    <p>Road Trip Blog</p>
+
+    <ul>
+      <li style="list-style-type:square"><a href="#">Home</a></li>
+      <li><a href="#">Places</a></li>
+      <li><a href="#">Photos</a></li>
+      <li><a href="#">Trip to Western Township</a></li>
+      <li><a href="#">Trip to Eastern Township</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Road Trip Day</h1>
+    <p>Plan your next trip, find amazing places, and take fascinating detours with the #1 trip planner.
+    <br>
+    <hr>
+    <dl>
+      <dt>study</dt>
+      <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books</dd>
+      <dt>design</dt>
+      <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made</dd>
+      <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object</dd>
+      <dt>business</dt>
+      <dt>work</dt>
+      <dd>A person's regular occupation, profession, or trade</dd>
+    </dl>
+  </p>
+</article>    
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
